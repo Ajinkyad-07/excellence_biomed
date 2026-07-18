@@ -27,6 +27,6 @@
     { "id": 23, "image": "23.jpg", "name": "Doxyvin-100",         "category": "Antibiotics",    "description": "Doxycycline for bacterial and protozoal infections.",                "tags": ["antibiotic", "doxycycline"] },
     { "id": 24, "image": "24.jpg", "name": "Febuvin-40",          "category": "Rheumatology",   "description": "Febuxostat for chronic hyperuricemia and gout.",                    "tags": ["gout", "uric acid"] },
     { "id": 25, "image": "25.jpg", "name": "Tonovin-Plus",        "category": "Nutrition",      "description": "Nutritional tonic for energy, immunity, and recovery.",             "tags": ["tonic", "wellness"] },
-    { "id": 26, "image": "26.jpg", "name": "Skinvin-Cream",       "category": "Dermatology",    "description": "Topical antifungal and antibacterial cream formulation.",            "tags": ["skin", "antifungal"] },
+    { "id": 26, "image": "26.jpg", "name": "Skinvin-Cream",       "category": "Dermatology",    "description": "Topical antifungal and antibacterial cream formulation.",            "tags": ["skin", "antifungal"] }
   ]
 }
