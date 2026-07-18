@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0fb5a8">
+
+  <title>Products — Excellence Biomed</title>
+  <meta name="description" content="Browse the Excellence Biomed product portfolio across cardiology, diabetology, antibiotics, neurology, dermatology, and more.">
+  <link rel="canonical" href="https://www.excellencebiomed.com/products.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Products — Excellence Biomed">
+  <meta property="og:description" content="Our portfolio of pharmaceutical products across multiple therapeutic areas.">
+  <meta property="og:image" content="assets/images/branding/logo.png">
+  <meta property="og:url" content="https://www.excellencebiomed.com/products.html">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Products — Excellence Biomed">
+  <meta name="twitter:description" content="Our portfolio of pharmaceutical products across multiple therapeutic areas.">
+  <meta name="twitter:image" content="assets/images/branding/logo.png">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"></noscript>
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Excellence Biomed home">
+        <img src="assets/images/branding/logo.png" alt="Excellence Biomed" width="180" height="60">
+      </a>
+      <button class="nav-toggle" data-nav-toggle aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+      <nav class="nav" id="primaryNav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html"   data-nav="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html"   data-nav="about.html">About</a></li>
+          <li><a class="nav-link" href="products.html" data-nav="products.html">Products</a></li>
+          <li><a class="nav-link" href="contact.html" data-nav="contact.html">Contact</a></li>
+          <li>
+            <button class="theme-toggle" data-theme-toggle type="button" aria-pressed="false" aria-label="Toggle dark mode" title="Toggle dark mode">
+              <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+              <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="4.22" y1="4.22" x2="6.34" y2="6.34"/><line x1="17.66" y1="17.66" x2="19.78" y2="19.78"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/><line x1="4.22" y1="19.78" x2="6.34" y2="17.66"/><line x1="17.66" y1="6.34" x2="19.78" y2="4.22"/></svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <span class="eyebrow">Our portfolio</span>
+        <h1>Products</h1>
+        <p class="lede">
+          A growing range of evidence-based pharmaceutical products across
+          multiple therapeutic categories. Click any product to view full
+          details.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="toolbar" role="search" aria-label="Filter products">
+          <div class="search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            <label for="productSearch" class="sr-only" style="position:absolute;left:-9999px;">Search products</label>
+            <input id="productSearch" type="search" placeholder="Search products, categories…" autocomplete="off">
+          </div>
+          <label for="productCategory" class="sr-only" style="position:absolute;left:-9999px;">Category</label>
+          <select id="productCategory" aria-label="Filter by category">
+            <option value="all">All categories</option>
+          </select>
+          <span class="muted" id="productCount" aria-live="polite" style="font-size: var(--fs-sm);"></span>
+        </div>
+
+        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+        <div id="productEmpty" hidden></div>
+      </div>
+    </section>
+
+    <section class="section section--alt" style="text-align:center;">
+      <div class="container">
+        <h2>Need product information?</h2>
+        <p class="muted" style="max-width: 60ch; margin: 0 auto var(--space-5);">
+          For detailed prescribing information, samples, or partnership
+          enquiries, our medical affairs team is ready to help.
+        </p>
+        <a href="contact.html" class="btn btn--primary">Contact us</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Product modal / lightbox -->
+  <div class="modal" id="productModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modalName">
+    <div class="modal-dialog" role="document">
+      <button class="modal-close" id="modalClose" type="button" aria-label="Close product details">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <div class="modal-image">
+        <img id="modalImage" src="" alt="">
+      </div>
+      <div class="modal-body">
+        <span class="category" id="modalCategory"></span>
+        <h3 id="modalName"></h3>
+        <p id="modalDescription"></p>
+        <a class="btn btn--primary" href="contact.html" style="align-self: flex-start; margin-top: var(--space-3);">Enquire about this product</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/branding/logo-address.png" alt="Excellence Biomed — address logo" width="240" height="120">
+          <p>Excellence in Biomedicine, Compassion in Care.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Categories</h4>
+          <ul class="footer-list">
+            <li><a href="products.html">Cardiology</a></li>
+            <li><a href="products.html">Diabetology</a></li>
+            <li><a href="products.html">Antibiotics</a></li>
+            <li><a href="products.html">Neurology</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-list">
+            <li><a href="contact.html">Send us a message</a></li>
+            <li><a href="mailto:info@excellencebiomed.com">info@excellencebiomed.com</a></li>
+            <li><a href="tel:+910000000000">+91 000 000 0000</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-meta">
+        <span>© <span data-year>2026</span> Excellence Biomed. All rights reserved.</span>
+        <span>Designed for better care.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/theme.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/products.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+/* ============================================================
+   variables.css — Theme tokens (light / dark)
+   Brand teal extracted from Excellence Biomed logo symbol.
+   ============================================================ */
+
+:root {
+  /* Surfaces */
+  --bg:           #ffffff;
+  --bg-elevated:  #f8fafc;
+  --bg-overlay:   rgba(15, 23, 42, 0.55);
+
+  /* Text */
+  --text:         #0f172a;
+  --text-muted:   #64748b;
+  --text-inverse: #ffffff;
+
+  /* Brand */
+  --primary:        #0fb5a8;   /* logo teal */
+  --primary-hover:  #0a978d;
+  --primary-soft:   rgba(15, 181, 168, 0.12);
+  --accent:         #0ea5b7;
+
+  /* Borders & shadows */
+  --border:       #e2e8f0;
+  --border-strong:#cbd5e1;
+  --shadow-sm:    0 1px 2px rgba(15, 23, 42, 0.06);
+  --shadow-md:    0 6px 16px rgba(15, 23, 42, 0.08);
+  --shadow-lg:    0 20px 40px rgba(15, 23, 42, 0.18);
+
+  /* Status */
+  --success:      #16a34a;
+  --success-bg:   #dcfce7;
+  --danger:       #dc2626;
+  --danger-bg:    #fee2e2;
+
+  /* Type scale */
+  --font-sans: "Inter", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --fs-xs:   0.8125rem;
+  --fs-sm:   0.875rem;
+  --fs-base: 1rem;
+  --fs-md:   1.125rem;
+  --fs-lg:   1.25rem;
+  --fs-xl:   1.5rem;
+  --fs-2xl:  2rem;
+  --fs-3xl:  2.5rem;
+  --fs-4xl:  3rem;
+
+  /* Spacing & radii */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+
+  /* Motion */
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --dur: 200ms;
+
+  /* Layout */
+  --container: 1200px;
+  --header-h: 72px;
+}
+
+[data-theme="dark"] {
+  --bg:           #0f172a;
+  --bg-elevated:  #1e293b;
+  --bg-overlay:   rgba(2, 6, 23, 0.7);
+
+  --text:         #f1f5f9;
+  --text-muted:   #94a3b8;
+  --text-inverse: #0f172a;
+
+  --primary:        #2dd4bf;   /* lighter teal for contrast on dark */
+  --primary-hover:  #5eead4;
+  --primary-soft:   rgba(45, 212, 191, 0.15);
+
+  --border:       #334155;
+  --border-strong:#475569;
+  --shadow-sm:    0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md:    0 6px 16px rgba(0, 0, 0, 0.4);
+  --shadow-lg:    0 20px 40px rgba(0, 0, 0, 0.55);
+
+  --success:      #4ade80;
+  --success-bg:   rgba(74, 222, 128, 0.12);
+  --danger:       #f87171;
+  --danger-bg:    rgba(248, 113, 113, 0.12);
+}
+
+/* Respect system preference only on first visit (theme.js overrides) */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --bg:           #0f172a;
+    --bg-elevated:  #1e293b;
+    --bg-overlay:   rgba(2, 6, 23, 0.7);
+    --text:         #f1f5f9;
+    --text-muted:   #94a3b8;
+    --text-inverse: #0f172a;
+    --primary:      #2dd4bf;
+    --primary-hover:#5eead4;
+    --primary-soft: rgba(45, 212, 191, 0.15);
+    --border:       #334155;
+    --border-strong:#475569;
+    --success:      #4ade80;
+    --success-bg:   rgba(74, 222, 128, 0.12);
+    --danger:       #f87171;
+    --danger-bg:    rgba(248, 113, 113, 0.12);
+  }
+}

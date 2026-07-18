@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0fb5a8">
+
+  <title>Contact — Excellence Biomed</title>
+  <meta name="description" content="Get in touch with Excellence Biomed. Reach our team for product enquiries, partnerships, or general questions.">
+  <link rel="canonical" href="https://www.excellencebiomed.com/contact.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact — Excellence Biomed">
+  <meta property="og:description" content="Get in touch with Excellence Biomed.">
+  <meta property="og:image" content="assets/images/branding/logo.png">
+  <meta property="og:url" content="https://www.excellencebiomed.com/contact.html">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact — Excellence Biomed">
+  <meta name="twitter:description" content="Get in touch with Excellence Biomed.">
+  <meta name="twitter:image" content="assets/images/branding/logo.png">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"></noscript>
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Excellence Biomed home">
+        <img src="assets/images/branding/logo.png" alt="Excellence Biomed" width="180" height="60">
+      </a>
+      <button class="nav-toggle" data-nav-toggle aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+      <nav class="nav" id="primaryNav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html"   data-nav="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html"   data-nav="about.html">About</a></li>
+          <li><a class="nav-link" href="products.html" data-nav="products.html">Products</a></li>
+          <li><a class="nav-link" href="contact.html" data-nav="contact.html">Contact</a></li>
+          <li>
+            <button class="theme-toggle" data-theme-toggle type="button" aria-pressed="false" aria-label="Toggle dark mode" title="Toggle dark mode">
+              <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+              <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="4.22" y1="4.22" x2="6.34" y2="6.34"/><line x1="17.66" y1="17.66" x2="19.78" y2="19.78"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/><line x1="4.22" y1="19.78" x2="6.34" y2="17.66"/><line x1="17.66" y1="6.34" x2="19.78" y2="4.22"/></svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <span class="eyebrow">Contact us</span>
+        <h1>We'd love to hear from you</h1>
+        <p class="lede">
+          For product enquiries, partnership opportunities, or general
+          questions, drop us a message and our team will respond within
+          one business day.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Send a message</h2>
+          <p class="muted">All fields marked with <span style="color: var(--danger);">*</span> are required.</p>
+        </div>
+
+        <form class="form" id="contactForm" novalidate aria-describedby="formHelp">
+          <p id="formHelp" class="sr-only" style="position:absolute;left:-9999px;">
+            Form fields are validated client-side before submission.
+          </p>
+
+          <!-- Alerts -->
+          <div class="form-alert form-alert--success" id="formSuccess" role="status" aria-live="polite"></div>
+          <div class="form-alert form-alert--error"   id="formError"   role="alert"   aria-live="assertive"></div>
+
+          <div class="field" data-field="name">
+            <label for="name">Full name <span class="required" aria-hidden="true">*</span></label>
+            <input id="name" name="name" type="text" autocomplete="name" required minlength="2" maxlength="100">
+            <span class="field-error" aria-live="polite"></span>
+          </div>
+
+          <div class="field" data-field="email">
+            <label for="email">Email <span class="required" aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" required maxlength="200">
+            <span class="field-error" aria-live="polite"></span>
+          </div>
+
+          <div class="field" data-field="phone">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" maxlength="30" placeholder="Optional">
+            <span class="field-error" aria-live="polite"></span>
+          </div>
+
+          <div class="field" data-field="subject">
+            <label for="subject">Subject <span class="required" aria-hidden="true">*</span></label>
+            <input id="subject" name="subject" type="text" required maxlength="200">
+            <span class="field-error" aria-live="polite"></span>
+          </div>
+
+          <div class="field" data-field="message">
+            <label for="message">Message <span class="required" aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" required minlength="10" maxlength="4000" rows="6"></textarea>
+            <span class="field-error" aria-live="polite"></span>
+          </div>
+
+          <!-- Honeypot — hidden from humans, visible to bots (Web3Forms' "botcheck") -->
+          <div class="hp" aria-hidden="true">
+            <label for="botcheck">Leave this field empty</label>
+            <input id="botcheck" name="botcheck" type="text" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div>
+            <button id="submitBtn" type="submit" class="btn btn--primary">
+              <span class="btn-label">Send message</span>
+              <span class="spinner" aria-hidden="true"></span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Other ways to reach us</h2>
+        </div>
+        <div class="contact-info">
+          <div class="info-card">
+            <h4>Email</h4>
+            <p><a href="mailto:info@excellencebiomed.com">info@excellencebiomed.com</a></p>
+          </div>
+          <div class="info-card">
+            <h4>Phone</h4>
+            <p><a href="tel:+910000000000">+91 000 000 0000</a></p>
+          </div>
+          <div class="info-card">
+            <h4>Address</h4>
+            <!-- TODO: replace with the company postal address -->
+            <p>Excellence Biomed<br>Plot No. XX, Industrial Area<br>City, State, India</p>
+          </div>
+          <div class="info-card">
+            <h4>Hours</h4>
+            <p>Mon – Fri, 9:00 – 18:00 IST</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/branding/logo-address.png" alt="Excellence Biomed — address logo" width="240" height="120">
+          <p>Excellence in Biomedicine, Compassion in Care.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Categories</h4>
+          <ul class="footer-list">
+            <li><a href="products.html">Cardiology</a></li>
+            <li><a href="products.html">Diabetology</a></li>
+            <li><a href="products.html">Antibiotics</a></li>
+            <li><a href="products.html">Neurology</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-list">
+            <li><a href="contact.html">Send us a message</a></li>
+            <li><a href="mailto:info@excellencebiomed.com">info@excellencebiomed.com</a></li>
+            <li><a href="tel:+910000000000">+91 000 000 0000</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-meta">
+        <span>© <span data-year>2026</span> Excellence Biomed. All rights reserved.</span>
+        <span>Designed for better care.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/theme.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/contact.js" defer></script>
+</body>
+</html>

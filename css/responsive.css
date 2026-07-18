@@ -1,0 +1,56 @@
+/* ============================================================
+   responsive.css — Breakpoints: 480, 768, 1024, 1280
+   Mobile-first.
+   ============================================================ */
+
+/* Small phones (>= 480px) — bump type slightly */
+@media (min-width: 480px) {
+  .hero h1 { font-size: clamp(2.25rem, 5vw, 3rem); }
+}
+
+/* Tablets (>= 768px) */
+@media (min-width: 768px) {
+  :root { --header-h: 80px; }
+  .section { padding: var(--space-8) 0; }
+  .hero-inner { grid-template-columns: 1.1fr 1fr; gap: var(--space-7); }
+  .product-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: 1.5fr 1fr 1fr 1fr; }
+}
+
+/* Desktop (>= 1024px) */
+@media (min-width: 1024px) {
+  .product-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* Wide (>= 1280px) */
+@media (min-width: 1280px) {
+  .product-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* Mobile-only behavior (< 768px) */
+@media (max-width: 767.98px) {
+  .nav-toggle { display: inline-flex; }
+
+  .nav {
+    position: fixed;
+    inset: var(--header-h) 0 auto 0;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    transform: translateY(-110%);
+    transition: transform var(--dur) var(--ease);
+    margin: 0;
+  }
+  .nav.is-open { transform: translateY(0); }
+  .nav-list {
+    flex-direction: column;
+    align-items: stretch;
+    padding: var(--space-3);
+    gap: var(--space-1);
+  }
+  .nav-link {
+    width: 100%;
+    padding: var(--space-3) var(--space-4);
+  }
+
+  .footer-grid { grid-template-columns: 1fr; }
+}
