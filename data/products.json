@@ -3,7 +3,6 @@
   "source": "Assets/fwdcorrectedexcellencevisualaid",
   "imageBase": "assets/images/products/",
   "products": [
-    { "id": 1,  "image": "01.jpg", "name": "Cardiovin-50",        "category": "Cardiology",     "description": "Antiplatelet therapy for cardiovascular risk reduction.",            "tags": ["cardiology", "heart", "antiplatelet"] },
     { "id": 2,  "image": "02.jpg", "name": "Glucovin-M 500",      "category": "Diabetology",    "description": "Oral antidiabetic combination for type 2 diabetes management.",     "tags": ["diabetes", "metformin"] },
     { "id": 3,  "image": "03.jpg", "name": "Amclovin-625",        "category": "Antibiotics",    "description": "Broad-spectrum amoxicillin + clavulanate antibiotic.",              "tags": ["antibiotic", "infection"] },
     { "id": 4,  "image": "04.jpg", "name": "Telmivin-40",         "category": "Cardiology",     "description": "Telmisartan for hypertension and cardiovascular protection.",       "tags": ["hypertension", "cardiology"] },
@@ -29,6 +28,5 @@
     { "id": 24, "image": "24.jpg", "name": "Febuvin-40",          "category": "Rheumatology",   "description": "Febuxostat for chronic hyperuricemia and gout.",                    "tags": ["gout", "uric acid"] },
     { "id": 25, "image": "25.jpg", "name": "Tonovin-Plus",        "category": "Nutrition",      "description": "Nutritional tonic for energy, immunity, and recovery.",             "tags": ["tonic", "wellness"] },
     { "id": 26, "image": "26.jpg", "name": "Skinvin-Cream",       "category": "Dermatology",    "description": "Topical antifungal and antibacterial cream formulation.",            "tags": ["skin", "antifungal"] },
-    { "id": 27, "image": "27.jpg", "name": "Paravin-650",         "category": "Pain Management","description": "Paracetamol 650 mg for fever and pain relief.",                      "tags": ["paracetamol", "fever"] }
   ]
 }
